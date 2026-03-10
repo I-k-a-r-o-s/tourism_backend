@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 
 const listingSchema = new Schema(
   {
@@ -10,11 +10,15 @@ const listingSchema = new Schema(
       type: String,
       required: true,
     },
-    image:{
-        type: String,
-        required: true,
+    image: {
+      type: String,
+      required: true,
     },
-    description: {
+    shortDescription: {
+      type: String,
+      required: true,
+    },
+    fullDescription: {
       type: String,
       required: true,
     },
@@ -26,14 +30,14 @@ const listingSchema = new Schema(
       ref: "User",
       required: true,
     },
-    likesCount:{
-        type: Number,
-        default: 0,
-    }
+    likesCount: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 const Listing = model("Listing", listingSchema);
