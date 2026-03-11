@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { connectMongoDB } from "./config/mongoDB.js";
 import userRoutes from "./routes/userRoutes.js";
+import listingRoutes from "./routes/listingRoutes.js";
 
 const server = express();
 
@@ -17,7 +18,8 @@ server.use(
   }),
 );
 
-server.use("/api/users", userRoutes);
+server.use("/api/users", userRoutes); //user routes
+server.use("/api/listings", listingRoutes); //listing routes
 
 const port = process.env.PORT;
 const startServer = async () => {
