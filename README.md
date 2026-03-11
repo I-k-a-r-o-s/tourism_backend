@@ -68,20 +68,20 @@ JWT_SECRET=
 ## Features Implemented
 
 **User authentication**
-Register (creates user + sets JWT cookie)
-Login (returns/sets JWT)
-Token-based auth (cookie)
+- **Register (creates user + sets JWT cookie)**
+- **Login (returns/sets JWT)**
+- **Token-based auth (cookie)**
 
 **Listings (Experiences)**
-Create listing (title, location, image URL, short/full descriptions, price)
-Read single listing by id
-List/search listings with cursor pagination and optional text search
-Update listing (owner only)
-delete listing (owner only)
+- **Create listing (title, location, image URL, short/full descriptions, price)**
+- **Read single listing by id**
+- **List/search listings with cursor pagination and optional text search**
+- **Update listing (owner only)**
+- **delete listing (owner only)**
 
 **Data modelling**
-Mongoose models for User and Listing
+- **Mongoose models for User and Listing**
 
 **Basic validation & error handling**
-Request body checks and status codes
-Standardized JSON responses(success,message etc.)
+- **Request body checks and status codes**
+- **Standardized JSON responses(success,message etc.)**
