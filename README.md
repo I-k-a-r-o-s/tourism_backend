@@ -19,7 +19,7 @@ Users can register and log in, create/edit/listings (experiences), and delete li
 
 ### Prerequisites
 - Node.js (created using v22.20.0)
-- npm or yarn
+- npm
 - MongoDB instance (local or cloud/tested with cloud)
 
 ### Install
